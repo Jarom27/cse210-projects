@@ -20,7 +20,7 @@ public class PromptGenerator
     public String GetRandomPrompt()
     {
         Random random = new Random();
-        int index = random.Next(0, _prompts.Count + 1);
+        int index = random.Next(0, _prompts.Count);
         return _prompts[index];
     }
 }
