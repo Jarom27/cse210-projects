@@ -12,8 +12,9 @@ public class GoalManager
         int option = 0;
         do
         {
+            DisplayPlayerInfo();
             Console.WriteLine("Menu Options:\n 1. Create New Goal\n 2. List Goals\n 3. Save Goals\n 4. Load Goals\n 5. Record Event\n 6. Quit");
-            Console.Write("Select a option from the menu: ");
+            Console.Write("Select a choice from the menu: ");
             option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -22,19 +23,15 @@ public class GoalManager
                     break;
                 case 2:
                     ListGoalDetails();
-                    DisplayPlayerInfo();
                     break;
                 case 3:
                     SaveGoals();
-                    DisplayPlayerInfo();
                     break;
                 case 4:
                     LoadGoals();
-                    DisplayPlayerInfo();
                     break;
                 case 5:
                     RecordEvent();
-                    DisplayPlayerInfo();
                     break;
             }
 
@@ -70,7 +67,7 @@ public class GoalManager
         Console.Write("Which type of goal would you like to create? ");
         int answer = int.Parse(Console.ReadLine());
         Goal newGoal = null;
-        string title = "";
+        string title;
         string description;
         int score;
         switch (answer)
