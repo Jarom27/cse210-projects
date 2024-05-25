@@ -11,6 +11,7 @@
 *.sln.docstates
 prove/Develop02/*.csv
 prove/Develop04/*.txt
+prove/Develop05/*.txt
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
